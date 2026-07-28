@@ -53,6 +53,7 @@ body{
 }
 
 
+
 /* HERO */
 
 .hero{
@@ -92,7 +93,8 @@ body{
 }
 
 
-/* BUTTON */
+
+/* MAIN BUTTON */
 
 .btn{
     display:inline-block;
@@ -103,7 +105,15 @@ body{
     border-radius:50px;
     font-size:20px;
     font-weight:bold;
+    transition:.3s;
 }
+
+
+.btn:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+}
+
 
 
 /* PRODUCTS */
@@ -137,6 +147,12 @@ h2{
     overflow:hidden;
     text-align:center;
     padding-bottom:25px;
+    transition:.3s;
+}
+
+
+.card:hover{
+    transform:translateY(-10px);
 }
 
 
@@ -159,41 +175,67 @@ h2{
 }
 
 
+/* PRICE */
+
 .card h4{
     color:#22c55e;
-    font-size:30px;
-    margin:15px;
+    font-size:35px;
+    font-weight:900;
+    margin:15px 0;
 }
 
+
+
+/* ORDER BUTTON */
 
 .btn-small{
+
     display:inline-block;
     margin-top:20px;
-    padding:12px 30px;
-    background:#2563eb;
+    padding:14px 35px;
+    background:#22c55e;
     color:white;
     text-decoration:none;
-    border-radius:10px;
+    border-radius:30px;
+    font-size:18px;
     font-weight:bold;
+    transition:.3s;
+
 }
+
+
+.btn-small:hover{
+
+    background:#16a34a;
+    transform:scale(1.05);
+
+}
+
+
 
 
 /* ADVANTAGES */
 
 .advantages{
+
     display:flex;
     justify-content:center;
     gap:25px;
     flex-wrap:wrap;
+
 }
 
 
 .advantages div{
+
     background:#111c32;
-    padding:25px;
+    padding:25px 35px;
     border-radius:15px;
     font-size:20px;
+
 }
+
+
 
 
 /* CONTACT */
@@ -203,9 +245,12 @@ h2{
 }
 
 
+
+
 /* WHATSAPP */
 
 .whatsapp{
+
     position:fixed;
     right:25px;
     bottom:25px;
@@ -219,17 +264,24 @@ h2{
     align-items:center;
     font-size:30px;
     text-decoration:none;
+
 }
+
+
 
 
 /* FOOTER */
 
 footer{
+
     background:#050a13;
     text-align:center;
     padding:30px;
     color:#aaa;
+
 }
+
+
 
 
 /* MOBILE */
@@ -251,6 +303,10 @@ footer{
 
 .hero p{
     font-size:18px;
+}
+
+h2{
+    font-size:32px;
 }
 
 }

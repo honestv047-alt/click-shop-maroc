@@ -438,4 +438,18 @@ h2{
     font-size:24px;
     font-weight:900;
     color:#22c55e;
+} 
+
+.navbar .logo img{
+    width:40px !important;
+    height:40px !important;
+    max-width:40px !important;
+    max-height:40px !important;
+    object-fit:contain !important;
+}
+
+.navbar .logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
 }

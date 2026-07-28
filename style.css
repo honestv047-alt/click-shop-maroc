@@ -417,3 +417,25 @@ h2{
 }
 
 }
+/* الكود القديم ديالك هنا */
+
+
+/* الكود الجديد */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.logo img{
+    width:45px !important;
+    height:45px !important;
+    max-width:45px;
+    object-fit:contain;
+}
+
+.logo span{
+    font-size:24px;
+    font-weight:900;
+    color:#22c55e;
+}

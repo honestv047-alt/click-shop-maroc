@@ -5,9 +5,11 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 html{
     scroll-behavior:smooth;
 }
+
 
 body{
     background:#070f1c;
@@ -15,447 +17,738 @@ body{
 }
 
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 
 .navbar{
+
     position:fixed;
     top:0;
     left:0;
     width:100%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 8%;
+
+    padding:22px 8%;
+
     background:rgba(7,15,28,0.95);
-    backdrop-filter:blur(10px);
+
     z-index:1000;
+
 }
+
 
 
 /* LOGO */
 
 .logo{
+
     display:flex;
     align-items:center;
     gap:10px;
+
 }
+
 
 .logo img{
+
     width:45px;
     height:45px;
+
     object-fit:contain;
+
 }
 
+
 .logo span{
+
     font-size:24px;
+
     font-weight:900;
+
     color:#22c55e;
+
 }
+
 
 
 /* MENU */
 
 .menu{
+
     display:flex;
+
     gap:30px;
+
     list-style:none;
+
 }
 
 
 .menu a{
+
     color:white;
+
     text-decoration:none;
+
     font-weight:bold;
-    transition:.3s;
+
 }
 
 
 .menu a:hover{
+
     color:#22c55e;
+
 }
 
 
 
-/* ===== HERO ===== */
+
+
+/* HERO */
+
 
 .hero{
-    min-height:100vh;
+
+    height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     text-align:center;
-    padding:120px 20px 40px;
+
+    padding:100px 20px 20px;
+
 
     background:
-    linear-gradient(
-        rgba(0,0,0,.65),
-        rgba(0,0,0,.65)
-    ),
+
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+
     url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600");
 
+
     background-size:cover;
+
     background-position:center;
+
 }
+
 
 
 .hero-content{
-    max-width:900px;
-    animation:showHero 1s ease;
-}
 
-
-@keyframes showHero{
-
-from{
-    opacity:0;
-    transform:translateY(40px);
-}
-
-to{
-    opacity:1;
-    transform:translateY(0);
-}
+    max-width:850px;
 
 }
 
 
 
 .hero h1{
-    font-size:60px;
+
+    font-size:65px;
+
     font-weight:900;
-    line-height:1.2;
+
     margin-bottom:25px;
+
 }
+
 
 
 .hero p{
-    font-size:22px;
+
+    font-size:24px;
+
     color:#ddd;
+
     line-height:1.6;
+
     margin-bottom:30px;
+
 }
+
 
 
 
 /* OFFER */
 
+
 .offer{
+
     display:inline-block;
+
     background:#ef4444;
+
     padding:12px 25px;
+
     border-radius:30px;
-    font-size:21px;
+
+    font-size:22px;
+
     font-weight:bold;
+
     margin-bottom:30px;
+
     animation:pulse 2s infinite;
+
 }
+
 
 
 @keyframes pulse{
 
 0%{
-    transform:scale(1);
+
+transform:scale(1);
+
 }
+
 
 50%{
-    transform:scale(1.06);
+
+transform:scale(1.05);
+
 }
+
 
 100%{
-    transform:scale(1);
+
+transform:scale(1);
+
 }
 
 }
+
+
 
 
 
 /* BUTTON */
 
+
 .btn{
+
     display:inline-block;
+
     padding:18px 45px;
+
     background:#22c55e;
+
     color:white;
+
     text-decoration:none;
+
     border-radius:50px;
+
     font-size:20px;
+
     font-weight:bold;
+
     transition:.3s;
+
 }
+
 
 
 .btn:hover{
+
     background:#16a34a;
-    transform:translateY(-5px);
+
+    transform:scale(1.05);
+
 }
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 
 .products,
 .about,
 .avis,
 .contact{
+
     max-width:1200px;
+
     margin:auto;
+
     padding:90px 20px;
+
 }
+
 
 
 h2{
+
     text-align:center;
+
     font-size:45px;
-    font-weight:900;
+
     margin-bottom:50px;
+
 }
 
 
 
-/* ===== PRODUCT CARDS ===== */
+
+/* CARDS */
 
 .cards{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
     gap:30px;
+
 }
+
+
 
 
 .card{
+
     position:relative;
+
     background:#111c32;
-    border-radius:25px;
+
+    border-radius:20px;
+
     overflow:hidden;
+
     text-align:center;
-    padding-bottom:30px;
-    transition:.4s;
-    border:1px solid rgba(255,255,255,.05);
+
+    padding-bottom:25px;
+
+    transition:.3s;
+
 }
+
 
 
 .card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+    transform:translateY(-10px);
+
 }
+
 
 
 
 .card img{
+
     width:100%;
-    height:250px;
+
+    height:230px;
+
     object-fit:cover;
-    transition:.4s;
+
 }
 
-
-.card:hover img{
-    transform:scale(1.05);
-}
 
 
 
 .card h3{
+
     font-size:28px;
-    margin:20px 0 10px;
+
+    margin:20px;
+
 }
+
 
 
 .card p{
+
     color:#ccc;
+
     line-height:1.8;
-    padding:0 15px;
+
 }
+
+
 
 
 
 /* BADGE */
 
+
 .badge{
+
     position:absolute;
+
     top:15px;
+
     left:15px;
+
     background:#22c55e;
+
     color:white;
-    padding:8px 18px;
+
+    padding:8px 15px;
+
     border-radius:20px;
+
     font-weight:bold;
+
     z-index:2;
+
 }
+
+
 
 
 
 /* PRICE */
 
+
 .card h4{
+
     color:#22c55e;
+
     font-size:35px;
-    margin:20px 0;
+
     font-weight:900;
+
+    margin:15px 0;
+
 }
 
 
 
-/* ORDER BUTTON */
+
+/* PRODUCT BUTTON */
+
 
 .btn-small{
+
     display:inline-block;
+
     margin-top:20px;
-    padding:13px 35px;
+
+    padding:14px 35px;
+
     background:#22c55e;
+
     color:white;
+
     text-decoration:none;
+
     border-radius:30px;
+
+    font-size:18px;
+
     font-weight:bold;
+
     transition:.3s;
+
 }
+
 
 
 .btn-small:hover{
+
     background:#16a34a;
+
     transform:scale(1.05);
+
 }
+
+
 
 
 
 /* BUY BUTTON */
 
+
 .buy-btn{
+
     display:inline-block;
+
     margin-top:15px;
-    padding:14px 35px;
+
+    padding:15px 40px;
+
     background:#f59e0b;
+
     color:white;
-    text-decoration:none;
+
     border-radius:30px;
+
+    text-decoration:none;
+
     font-weight:bold;
+
+    font-size:18px;
+
     transition:.3s;
+
 }
+
 
 
 .buy-btn:hover{
+
     background:#d97706;
+
     transform:scale(1.05);
+
 }
 
 
 
-/* ===== ADVANTAGES ===== */
+
+
+
+/* VIDEO SECTION */
+
+
+.video-section{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+
+
+
+.video-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+
+.video-box video{
+
+    width:320px;
+
+    height:570px;
+
+    object-fit:contain;
+
+    background:#000;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+
+
+.video-section p{
+
+    margin-top:25px;
+
+    color:#ccc;
+
+    font-size:18px;
+
+}
+/* ADVANTAGES */
 
 .advantages{
+
     display:flex;
+
     justify-content:center;
+
     gap:25px;
+
     flex-wrap:wrap;
+
 }
+
 
 
 .advantages div{
+
     background:#111c32;
+
     padding:25px 35px;
-    border-radius:18px;
-    font-size:19px;
-    transition:.3s;
+
+    border-radius:15px;
+
+    font-size:20px;
+
 }
 
 
-.advantages div:hover{
-    transform:translateY(-8px);
-}
 
 
 
 /* TRUST BOX */
 
+
 .trust-box{
+
     background:#111c32;
-    padding:35px;
-    border-radius:25px;
+
+    padding:30px;
+
+    border-radius:20px;
+
     text-align:center;
+
     margin-top:40px;
+
 }
+
 
 
 .trust-box h3{
+
     font-size:28px;
-    margin-bottom:20px;
+
+    margin-bottom:15px;
+
 }
 
 
 
-/* ===== WHATSAPP FLOAT ===== */
+
+
+
+
+/* WHATSAPP FLOAT BUTTON */
+
 
 .whatsapp{
+
     position:fixed;
+
     right:25px;
+
     bottom:25px;
-    width:65px;
-    height:65px;
+
+    width:60px;
+
+    height:60px;
+
     background:#22c55e;
+
     color:white;
+
     border-radius:50%;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    font-size:32px;
+
+    font-size:30px;
+
     text-decoration:none;
-    box-shadow:0 10px 25px rgba(0,0,0,.4);
+
     z-index:999;
-    transition:.3s;
-}
 
-
-.whatsapp:hover{
-    transform:scale(1.1);
 }
 
 
 
-/* ===== FOOTER ===== */
+
+
+
+/* FOOTER */
+
 
 footer{
+
     background:#050a13;
+
     text-align:center;
+
     padding:30px;
+
     color:#aaa;
+
 }
 
 
 
-/* ===== MOBILE ===== */
+
+
+
+/* MOBILE */
+
 
 @media(max-width:768px){
 
+
+
 .navbar{
+
     flex-direction:column;
+
     gap:15px;
-    padding:15px 5%;
+
 }
 
-
-.logo span{
-    font-size:20px;
-}
 
 
 .menu{
+
     gap:15px;
+
 }
+
 
 
 .hero h1{
-    font-size:38px;
+
+    font-size:40px;
+
 }
+
 
 
 .hero p{
+
     font-size:18px;
+
 }
+
 
 
 h2{
+
     font-size:32px;
+
 }
 
 
-.card img{
-    height:220px;
+
+.video-box video{
+
+    width:280px;
+
+    height:500px;
+
 }
+
+
+
+.logo span{
+
+    font-size:20px;
+
+}
+
+
 
 }

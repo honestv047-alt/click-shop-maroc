@@ -452,4 +452,28 @@ h2{
     display:flex;
     align-items:center;
     gap:8px;
+} 
+/* الكود القديم */
+
+
+/* الكود اللي زدنا قبل */
+
+
+/* زيد هادا فالأخير */
+.navbar .logo img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain !important;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

@@ -1,214 +1,224 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="fr">
 
-html{
-    scroll-behavior:smooth;
-}
+<head>
 
-body{
-    background:#08111f;
-    color:#fff;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* NAVBAR */
+<title>Click Shop Maroc</title>
 
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:rgba(8,17,31,.95);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
+<link rel="stylesheet" href="style.css">
 
-.logo{
-    color:#22c55e;
-    font-size:28px;
-    font-weight:900;
-}
+</head>
 
-.menu{
-    display:flex;
-    gap:35px;
-    list-style:none;
-}
 
-.menu a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
+<body>
 
-.menu a:hover{
-    color:#22c55e;
-}
 
-/* HERO */
+<nav class="navbar">
 
-.hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:100px 20px 20px;
-    background:linear-gradient(135deg,#08111f,#162b4d);
-}
+<div class="logo">
+CLICK SHOP MAROC
+</div>
 
-.hero-content{
-    max-width:800px;
-}
+<ul class="menu">
 
-.hero h1{
-    font-size:70px;
-    font-weight:900;
-    margin-bottom:20px;
-}
+<li><a href="#home">Accueil</a></li>
 
-.hero p{
-    font-size:24px;
-    color:#d1d5db;
-    margin-bottom:35px;
-    line-height:1.6;
-}
+<li><a href="#products">Produits</a></li>
 
-.btn{
-    display:inline-block;
-    background:#22c55e;
-    color:white;
-    text-decoration:none;
-    padding:18px 45px;
-    border-radius:50px;
-    font-size:20px;
-    font-weight:bold;
-    transition:.3s;
-}
+<li><a href="#about">Pourquoi nous</a></li>
 
-.btn:hover{
-    background:#16a34a;
-    transform:translateY(-4px);
-}
+<li><a href="#contact">Contact</a></li>
 
-/* SECTIONS */
+</ul>
 
-.products,
-.advantages{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 20px;
-}
+</nav>
 
-.products h2,
-.advantages h2,
-footer h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:45px;
-}
 
-/* CARDS */
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
+<section id="home" class="hero">
 
-.card{
-    background:#16233d;
-    border-radius:18px;
-    overflow:hidden;
-    transition:.3s;
-    text-align:center;
-}
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-}
+<div class="hero-content">
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
 
-.card h3{
-    font-size:26px;
-    margin:20px 0 10px;
-}
+<h1>
+Votre voiture mérite le meilleur
+</h1>
 
-.card p{
-    color:#d1d5db;
-    padding:0 20px 20px;
-}
 
-.btn-small{
-    display:inline-block;
-    margin-bottom:25px;
-    padding:12px 28px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:bold;
-}
+<p>
+Logos LED Premium pour Mercedes, BMW, Audi et Volkswagen.
+Un style unique pour votre véhicule.
+</p>
 
-/* FOOTER */
 
-footer{
-    background:#0b1220;
-    text-align:center;
-    padding:60px 20px;
-}
+<a class="btn" href="https://wa.me/212XXXXXXXXX">
+Commander maintenant
+</a>
 
-footer p{
-    margin:10px 0;
-    color:#b0b0b0;
-}
 
-/* MOBILE */
+</div>
 
-@media(max-width:768px){
 
-    .navbar{
-        flex-direction:column;
-        gap:15px;
-    }
+</section>
 
-    .menu{
-        gap:18px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
 
-    .hero h1{
-        font-size:42px;
-    }
 
-    .hero p{
-        font-size:18px;
-    }
 
-    .products h2,
-    .advantages h2,
-    footer h2{
-        font-size:30px;
-    }
+<section id="products" class="products">
 
-    .btn{
-        font-size:18px;
-        padding:15px 35px;
-    }
 
-}
+<h2>
+Nos Produits
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=900">
+
+<h3>
+Mercedes
+</h3>
+
+<p>
+Logo LED Premium
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900">
+
+<h3>
+BMW
+</h3>
+
+<p>
+Logo LED Premium
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=900">
+
+<h3>
+Audi
+</h3>
+
+<p>
+Logo LED Premium
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="about" class="about">
+
+
+<h2>
+Pourquoi nous choisir ?
+</h2>
+
+
+
+<div class="advantages">
+
+
+<div>
+⭐ Qualité Premium
+</div>
+
+
+<div>
+🚚 Livraison partout au Maroc
+</div>
+
+
+<div>
+💬 Support WhatsApp rapide
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="contact" class="contact">
+
+
+<h2>
+Contactez-nous
+</h2>
+
+
+<p>
+Commandez votre logo LED dès maintenant.
+</p>
+
+
+<a class="btn" href="https://wa.me/212XXXXXXXXX">
+WhatsApp
+</a>
+
+
+</section>
+
+
+
+
+
+
+<a class="whatsapp" href="https://wa.me/212XXXXXXXXX">
+💬
+</a>
+
+
+
+
+<footer>
+
+© 2026 Click Shop Maroc
+
+</footer>
+
+
+
+</body>
+
+</html>

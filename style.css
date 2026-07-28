@@ -53,7 +53,6 @@ body{
 }
 
 
-
 /* HERO */
 
 .hero{
@@ -93,8 +92,7 @@ body{
 }
 
 
-
-/* MAIN BUTTON */
+/* BUTTON */
 
 .btn{
     display:inline-block;
@@ -142,6 +140,7 @@ h2{
 
 
 .card{
+    position:relative;
     background:#111c32;
     border-radius:20px;
     overflow:hidden;
@@ -175,6 +174,22 @@ h2{
 }
 
 
+/* BADGE */
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#22c55e;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:bold;
+    z-index:2;
+}
+
+
+
 /* PRICE */
 
 .card h4{
@@ -189,7 +204,6 @@ h2{
 /* ORDER BUTTON */
 
 .btn-small{
-
     display:inline-block;
     margin-top:20px;
     padding:14px 35px;
@@ -200,41 +214,32 @@ h2{
     font-size:18px;
     font-weight:bold;
     transition:.3s;
-
 }
 
 
 .btn-small:hover{
-
     background:#16a34a;
     transform:scale(1.05);
-
 }
-
 
 
 
 /* ADVANTAGES */
 
 .advantages{
-
     display:flex;
     justify-content:center;
     gap:25px;
     flex-wrap:wrap;
-
 }
 
 
 .advantages div{
-
     background:#111c32;
     padding:25px 35px;
     border-radius:15px;
     font-size:20px;
-
 }
-
 
 
 
@@ -246,11 +251,9 @@ h2{
 
 
 
-
 /* WHATSAPP */
 
 .whatsapp{
-
     position:fixed;
     right:25px;
     bottom:25px;
@@ -264,23 +267,18 @@ h2{
     align-items:center;
     font-size:30px;
     text-decoration:none;
-
 }
-
 
 
 
 /* FOOTER */
 
 footer{
-
     background:#050a13;
     text-align:center;
     padding:30px;
     color:#aaa;
-
 }
-
 
 
 

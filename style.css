@@ -36,11 +36,13 @@ body{
     color:#22c55e;
 }
 
+
 .menu{
     display:flex;
     gap:30px;
     list-style:none;
 }
+
 
 .menu a{
     color:white;
@@ -48,9 +50,11 @@ body{
     font-weight:bold;
 }
 
+
 .menu a:hover{
     color:#22c55e;
 }
+
 
 
 /* HERO */
@@ -88,8 +92,42 @@ body{
     font-size:24px;
     color:#ddd;
     line-height:1.6;
-    margin-bottom:40px;
+    margin-bottom:30px;
 }
+
+
+
+/* OFFER */
+
+.offer{
+    display:inline-block;
+    background:#ef4444;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:30px;
+    animation:pulse 2s infinite;
+}
+
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
 
 
 /* BUTTON */
@@ -114,10 +152,11 @@ body{
 
 
 
-/* PRODUCTS */
+/* SECTIONS */
 
 .products,
 .about,
+.avis,
 .contact{
     max-width:1200px;
     margin:auto;
@@ -132,6 +171,9 @@ h2{
 }
 
 
+
+/* CARDS */
+
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -140,6 +182,7 @@ h2{
 
 
 .card{
+
     position:relative;
     background:#111c32;
     border-radius:20px;
@@ -147,6 +190,7 @@ h2{
     text-align:center;
     padding-bottom:25px;
     transition:.3s;
+
 }
 
 
@@ -172,6 +216,7 @@ h2{
     color:#ccc;
     line-height:1.8;
 }
+
 
 
 /* BADGE */
@@ -200,10 +245,18 @@ h2{
 }
 
 
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    font-size:18px;
+}
+
+
 
 /* ORDER BUTTON */
 
 .btn-small{
+
     display:inline-block;
     margin-top:20px;
     padding:14px 35px;
@@ -214,12 +267,42 @@ h2{
     font-size:18px;
     font-weight:bold;
     transition:.3s;
+
 }
 
 
 .btn-small:hover{
+
     background:#16a34a;
     transform:scale(1.05);
+
+}
+
+
+
+/* BUY BUTTON */
+
+.buy-btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:15px 40px;
+    background:#f59e0b;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+
+.buy-btn:hover{
+
+    background:#d97706;
+    transform:scale(1.05);
+
 }
 
 
@@ -227,26 +310,44 @@ h2{
 /* ADVANTAGES */
 
 .advantages{
+
     display:flex;
     justify-content:center;
     gap:25px;
     flex-wrap:wrap;
+
 }
 
 
 .advantages div{
+
     background:#111c32;
     padding:25px 35px;
     border-radius:15px;
     font-size:20px;
+
 }
 
 
 
-/* CONTACT */
+/* TRUST BOX */
 
-.contact{
+.trust-box{
+
+    background:#111c32;
+    padding:30px;
+    border-radius:20px;
     text-align:center;
+    margin-top:40px;
+
+}
+
+
+.trust-box h3{
+
+    font-size:28px;
+    margin-bottom:15px;
+
 }
 
 
@@ -254,6 +355,7 @@ h2{
 /* WHATSAPP */
 
 .whatsapp{
+
     position:fixed;
     right:25px;
     bottom:25px;
@@ -267,6 +369,7 @@ h2{
     align-items:center;
     font-size:30px;
     text-decoration:none;
+
 }
 
 
@@ -274,10 +377,12 @@ h2{
 /* FOOTER */
 
 footer{
+
     background:#050a13;
     text-align:center;
     padding:30px;
     color:#aaa;
+
 }
 
 
@@ -291,17 +396,21 @@ footer{
     gap:15px;
 }
 
+
 .menu{
     gap:15px;
 }
+
 
 .hero h1{
     font-size:40px;
 }
 
+
 .hero p{
     font-size:18px;
 }
+
 
 h2{
     font-size:32px;
